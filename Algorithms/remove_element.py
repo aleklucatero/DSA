@@ -22,7 +22,7 @@ occurences of T from the list and return the new list
 '''
 
 #Code Attempt 1:
-def filteredList(numbers, value):
+def filterList(numbers, value):
 
     result = []
     for number in numbers:
@@ -32,4 +32,5 @@ def filteredList(numbers, value):
             result.append(number)
     return result
 
-filteredList([1, 2, 3, 3, 4, 5, 3, 6], 3)
+print(filterList([1, 2, 3, 3, 4, 5, 3, 6], 3))
+print(filterList([1, 2, 3, 2, 3, 2, 4, 2], 2))
