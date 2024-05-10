@@ -51,12 +51,11 @@ Since we are working with the same list and changing it, use a pointer.
 #Code Attempt 2:
 def removeElements(nums, val):
     i = 0
-    while i < len(nums):
+    while len(nums) > i:
         if nums[i] == val:
             nums.pop(i)
         else:
             i += 1
     return len(nums)
 
-print(removeElements([3,2,2,3], 3))
-print(removeElements([0,1,2,2,3,0,4,2], 2))
+print(f"The length of the array is {removeElements([1, 2, 3, 4, 5], 1)}")
